@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Container from "../components/Container";
 import Task from "../components/Task";
 
 import styles from "../styles/Home.module.css";
@@ -29,38 +30,32 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="p-4">
-        <h1 className="text-3xl font-bold">Welcome to Fake Store</h1>
+      <Task>
+        <li>Fetch categories from the API</li>
+        <li>Render as a list here</li>
+        <li>
+          Each item should link to{" "}
+          <code className="bg-gray-300">{"/{category}"}</code>
+        </li>
+        <li>Style as a horizontal list</li>
+      </Task>
 
-        <Task>
-          <li>Fetch categories from the API</li>
-          <li>Render as a list here</li>
-          <li>
-            Each item should link to{" "}
-            <code className="bg-gray-300">{"/{category}"}</code>
-          </li>
-          <li>Style as a horizontal list</li>
-        </Task>
+      <section className="pt-10">
+        <div className="">
+          <h2
+            id="category-heading"
+            className="text-2xl font-bold tracking-tight text-gray-900"
+          >
+            Shop by Category
+          </h2>
+        </div>
 
-        <section className="pt-10">
-          <div className="">
-            <h2
-              id="category-heading"
-              className="text-2xl font-bold tracking-tight text-gray-900"
-            >
-              Shop by Category
-            </h2>
-          </div>
-
-          <div className="mt-4">
-            <div className="">
-              {categories.map((category) => (
-                <div key={category}>{category}</div>
-              ))}
-            </div>
-          </div>
-        </section>
-      </div>
+        <div className="mt-4">
+          {categories.map((category) => (
+            <div key={category}>{category}</div>
+          ))}
+        </div>
+      </section>
     </>
   );
 }
