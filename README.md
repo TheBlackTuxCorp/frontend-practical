@@ -29,8 +29,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 There are several tasks available in this repo around basic styling and data fetching / rendering, available in the following routes:
 
 One of the following will be chosen:
-`/`: Fetch and render categories
-`/{categorySlug}`: Fetch and render products within a category
-`/{categorySlug}/{productId}`: Fetch and render a product based on ID
+- `/`: Fetch and render categories
+- `/{categorySlug}`: Fetch and render products within a category
+- `/{categorySlug}/{productId}`: Fetch and render a product based on ID
 
 Time permitting: Styling (SASS or Tailwind), loading states, and error states.
