@@ -34,3 +34,8 @@ One of the following will be chosen:
 - `/{categorySlug}/{productId}`: Fetch and render a product based on ID
 
 Time permitting: Styling (SASS or Tailwind), loading states, and error states.
+
+Styling Product Grid:
+Something similar to this:
+<img width="877" alt="Screen Shot 2023-03-15 at 10 17 23 AM" src="https://user-images.githubusercontent.com/4898984/225389280-12679ac8-3777-4c02-81b0-84d52cfa5d51.png">
+
